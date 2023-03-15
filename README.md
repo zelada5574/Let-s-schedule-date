@@ -27,3 +27,6 @@ Each time block has an input field and save button where users can store their s
 Once it saved, it will store in their local storage.
 
 ![alt text](./assets/images/Screenshot.PNG)
+
+https://github.com/zelada5574/Let-s-schedule-date
+https://zelada5574.github.io/Let-s-schedule-date/ 
