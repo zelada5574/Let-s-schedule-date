@@ -13,9 +13,6 @@ $(document).ready(function () {
       let textArea = $(this).children(".description");
       let saveBtn = $(this).children(".saveBtn");
 
-      console.log("hour:", hour);
-      console.log("currentTime:", currentTime);
-
       if (hour < currentTime) {
         textArea.addClass("past");
       } else if (hour === currentTime) {
@@ -36,9 +33,6 @@ $(document).ready(function () {
     let text = $(this).siblings(".description").val();
     let time = $(this).parent().attr("id");
 
-    console.log("text:", text);
-    console.log("time:", time);
-
     localStorage.setItem(time, text);
   });
 
@@ -46,9 +40,7 @@ $(document).ready(function () {
   $(".time-block").each(function () {
     let time = $(this).attr("id");
     let text = localStorage.getItem(time);
-
-    console.log("text:", text);
-    console.log("time:", time);
+ 
 
     $(this).children(".description").val(text);
   });
@@ -56,3 +48,6 @@ $(document).ready(function () {
   // Update time slot colors every minute
   setInterval(updateTimeSlotColors, 60000);
 });
+
+
+   
